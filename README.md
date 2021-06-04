@@ -1,3 +1,1 @@
-* LeaderboardController sınıfının LeaderboardSorterByScore ve LeaderboardSorterByName sınıflarına olan bağımlılığı kaldırılmak istenmektedir. Dependency Inversion prensibine göre çözümleyiniz.
-
-* Eksik gördüğünüz başka alanları tasarım desenleri ve prensiplerini kullanarak iyileştiriniz.
+* Assets klasörü altındaki her klasör altında bulunan 'READMe.md'  dosyası üzerinden gereksinimleri bulabilirsiniz.
