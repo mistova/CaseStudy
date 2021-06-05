@@ -22,6 +22,11 @@ public class UIControll : MonoBehaviour
         winText.gameObject.SetActive(state);
     }
 
+    public void SetValueWinText(string value)
+    {
+        winText.text = value;
+    }
+
     public void SetActiveForceSlider(bool state)
     {
         forceSlider.gameObject.SetActive(state);
