@@ -12,10 +12,10 @@
 			var sortType = PlayerPrefs.GetInt("SortType", 0);
 			if (sortType == 0)
 			{
-				return new LeaderboardSorterByScore().Sort(leaderboardProvider);
+				return ((Sorter) new LeaderboardSorterByScore()).Sort(leaderboardProvider);
 			}
 
-			return new LeaderboardSorterByName().Sort(leaderboardProvider);
+			return ((Sorter)new LeaderboardSorterByName()).Sort(leaderboardProvider);
 		}
 	}
 }

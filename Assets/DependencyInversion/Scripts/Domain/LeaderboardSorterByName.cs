@@ -6,7 +6,12 @@
 
 	public class LeaderboardSorterByName
 	{
-		public IEnumerable<LeaderboardItem> Sort(FakeLeaderboardProvider leaderboardProvider) =>
+		public IEnumerable<LeaderboardItem> Sort(FakeLeaderboardProvider leaderboardProvider)
+		{
+			return SortbyName(leaderboardProvider);
+		}
+
+		public IEnumerable<LeaderboardItem> SortbyName(FakeLeaderboardProvider leaderboardProvider) =>
 			leaderboardProvider.GetItems().OrderBy(i => i.Name);
 	}
 }
